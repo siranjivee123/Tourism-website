@@ -1,78 +1,61 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+
+.package {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding-top: 50px;
+.package h3 {
+    margin-bottom: 10px;
 }
 
-.header {
+.package p {
+    margin-bottom: 15px;
+}
+
+.package button {
     background-color: #333;
     color: #fff;
-    padding: 1rem;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.header__nav-list {
-    list-style-type: none;
-}
-
-.header__nav-item {
-    display: inline;
-    margin-right: 1rem;
-}
-
-.header__nav-link {
-    color: #fff;
-    text-decoration: none;
-}
-
-.section {
-    padding: 2rem;
-    padding-top: 70px;
-}
-
-.section__title {
-    margin-bottom: 1rem;
-}
-
-.section__label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.section__input,
-.section__button {
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.section__button {
-    padding: 0.5rem 1rem;
-    background-color: #333;
-    color: #fff;
+    padding: 8px 16px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.section__button:hover {
+.package button:hover {
     background-color: #555;
 }
 
-.footer {
+.collection {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.collection h3 {
+    margin-bottom: 10px;
+}
+
+.collection p {
+    margin-bottom: 15px;
+}
+
+.collection button {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.collection button:hover {
+    background-color: #555;
 }
