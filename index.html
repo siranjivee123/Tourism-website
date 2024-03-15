@@ -9,64 +9,144 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="header__title">Gogaga Holidays</h1>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#holiday-packages" class="header__nav-link">Holiday Packages</a></li>
-                <li class="header__nav-item"><a href="#flight-booking" class="header__nav-link">Flight Booking</a></li>
-                <li class="header__nav-item"><a href="#hotel-booking" class="header__nav-link">Hotel Booking</a></li>
-                <li class="header__nav-item"><a href="#package-collections" class="header__nav-link">Package Collections</a></li>
+    <header>
+        <h1>Gogaga Holidays</h1>
+        <nav>
+            <ul>
+                <li><a href="#packages">Holiday Packages</a></li>
+                <li><a href="#flights">Flight Booking</a></li>
+                <li><a href="#hotels">Hotel Booking</a></li>
+                <li><a href="#collections">Package Collections</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="holiday-packages" class="section">
-        <h2 class="section__title">Holiday Packages</h2>
-        <div class="package section__content">
-            <h3 class="package__title">Package 1</h3>
-            <p class="package__description">Description of the package...</p>
-            <button class="package__button">Book Now</button>
+    <main>
+        <section id="packages">
+            <h2>Holiday Packages</h2>
+            <div class="package">
+                <h3>Package Name</h3>
+                <div class="package">
+                    <h3>Beach Paradise</h3>
+                    <p>Explore the sandy beaches and crystal-clear waters of the Caribbean.</p>
+                    <p>Duration: 7 days</p>
+                    <p>Price: $1500</p>
+                    <button>Book Now</button>
+                </div>
+
+                <div class="package">
+                    <h3>City Escape</h3>
+                    <p>Experience the vibrant culture and iconic landmarks of New York City.</p>
+                    <p>Duration: 5 days</p>
+                    <p>Price: $1200</p>
+                    <button>Book Now</button>
+                </div>
+
+                <div class="package">
+                    <h3>Mountain Adventure</h3>
+                    <p>Embark on a thrilling trekking expedition in the Himalayas.</p>
+                    <p>Duration: 10 days</p>
+                    <p>Price: $2000</p>
+                    <button>Book Now</button>
+                </div>
+                <!-- Add more packages as needed -->
+        </section>
+
+
+        <p></p>
         </div>
-    </section>
 
-    <section id="flight-booking" class="section">
-        <h2 class="section__title">Flight Booking</h2>
-        <form class="section__content">
-            <label for="departure" class="section__label">Departure:</label>
-            <input type="text" id="departure" name="departure" class="section__input">
-            <label for="destination" class="section__label">Destination:</label>
-            <input type="text" id="destination" name="destination" class="section__input">
-            <label for="date" class="section__label">Date:</label>
-            <input type="date" id="date" name="date" class="section__input">
-            <button type="submit" class="section__button">Search Flights</button>
-        </form>
-    </section>
+        </section>
 
-    <section id="hotel-booking" class="section">
-        <h2 class="section__title">Hotel Booking</h2>
-        <form class="section__content">
-            <label for="location" class="section__label">Location:</label>
-            <input type="text" id="location" name="location" class="section__input">
-            <label for="check-in" class="section__label">Check-in:</label>
-            <input type="date" id="check-in" name="check-in" class="section__input">
-            <label for="check-out" class="section__label">Check-out:</label>
-            <input type="date" id="check-out" name="check-out" class="section__input">
-            <button type="submit" class="section__button">Search Hotels</button>
-        </form>
-    </section>
+        <section id="flights">
 
-    <section id="package-collections" class="section">
-        <h2 class="section__title">Package Collections</h2>
-        <div class="package-collection section__content">
-            <h3 class="package-collection__title">Adventure Collection</h3>
-            <p class="package-collection__description">Description of the adventure collection...</p>
-            <button class="package-collection__button">View Packages</button>
-        </div>
-    </section>
+            <section id="flights">
+                <h2>Flight Booking</h2>
+                <form>
+                    <label for="departure">Departure:</label>
+                    <input type="text" id="departure" name="departure" placeholder="Departure city" required>
 
-    <footer class="footer">
-        <p class="footer__copyright">&copy; 2024 Gogaga Holidays. All rights reserved.</p>
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Destination city" required>
+
+                    <label for="departure-date">Departure Date:</label>
+                    <input type="date" id="departure-date" name="departure-date" required>
+
+                    <label for="return-date">Return Date:</label>
+                    <input type="date" id="return-date" name="return-date" required>
+
+                    <label for="passengers">Passengers:</label>
+                    <input type="number" id="passengers" name="passengers" min="1" required>
+
+                    <button type="submit">Search Flights</button>
+                </form>
+            </section>
+
+
+            <form>
+
+            </form>
+        </section>
+
+        <section id="hotels">
+            <section id="hotels">
+                <h2>Hotel Booking</h2>
+                <form>
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Destination city" required>
+
+                    <label for="check-in">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check-in" required>
+
+                    <label for="check-out">Check-out Date:</label>
+                    <input type="date" id="check-out" name="check-out" required>
+
+                    <label for="guests">Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+
+                    <button type="submit">Search Hotels</button>
+                </form>
+            </section>
+
+
+            <form>
+
+            </form>
+        </section>
+
+        <section id="collections">
+            <section id="collections">
+                <h2>Package Collections</h2>
+                <div class="collection">
+                    <h3>Adventure Collection</h3>
+                    <p>Embark on thrilling adventures around the world.</p>
+                    <button>Explore</button>
+                </div>
+
+                <div class="collection">
+                    <h3>Family Fun Collection</h3>
+                    <p>Exciting destinations and activities for the whole family.</p>
+                    <button>Explore</button>
+                </div>
+
+                <div class="collection">
+                    <h3>Romantic Getaway Collection</h3>
+                    <p>Escape to romantic destinations with your loved one.</p>
+                    <button>Explore</button>
+                </div>
+                <!-- Add more collections as needed -->
+            </section>
+
+
+            <div class="collection">
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gogaga Holidays. All rights reserved.</p>
     </footer>
 </body>
 
